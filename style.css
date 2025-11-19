@@ -958,7 +958,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 @media screen and (max-width: 768px) {
   .hero {
     padding: 120px 15px 70px;
-    text-align: center;
+    text-align: left;
   }
 
   .hero-content {

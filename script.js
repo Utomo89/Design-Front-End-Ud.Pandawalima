@@ -68,6 +68,26 @@ modal.addEventListener("click", (e) => {
   if (e.target === modal) modal.style.display = "none";
 });
 
+
+  // Klik tombol "Lihat Gambar"
+  const modalButtons = document.querySelectorAll(".open-modal-btn");
+  modalButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const imgSrc = btn.getAttribute("data-img");
+      modal.style.display = "block";
+      modalImg.src = imgSrc;
+    });
+  });
+
+  // Close
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+
 /* ======================
         ZOOM FUNGSI
   ====================== */

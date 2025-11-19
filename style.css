@@ -4,7 +4,7 @@
 :root{
   --primary: #bd774a;
   --secondary: #f7f7f7;
-  --tertiary: #055940e6;
+  --tertiary: #2A6E39;
   --text-navbar:#181818;
   --wa-color: #25d366;
   --text-content:#f7f7f7;
@@ -70,8 +70,8 @@ background: rgba(110, 110, 109, 0.247);
 }
 
 .logo img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -496,8 +496,9 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 .product-card h3 {
   font-size: 20px;
   color: #2C2C2C;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-weight: 700;
+  text-align: left;
 }
 
 .product-card p {
@@ -505,6 +506,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .product-card .price {
@@ -513,6 +515,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
   font-weight: 700;
   color: var(--tertiary);
   margin-bottom: 12px;
+  text-align: left;
 }
 
 
@@ -557,18 +560,29 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 
 /* CARD STYLE */
 .modern-card {
-  background: #0c121e;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 24px;
+  background: linear-gradient(135deg,
+      rgba(114, 214, 119, 0.2),
+      rgba(59, 255, 92, 0.212)
+    );
+  border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-  transition: transform .3s ease, box-shadow .3s ease;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.4),
+      inset 0 0 25px rgba(255, 255, 255, 0.04);
+  transition: .3s ease;
 }
 
 .modern-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 50px rgba(0,0,0,0.55);
+  box-shadow:
+      0 20px 55px rgba(0, 0, 0, 0.65),
+      inset 0 0 30px rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.2);
 }
+
 
 /* CONTENT LAYOUT */
 .legality-content {
@@ -589,7 +603,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 /* TEXT */
 .legality-text h2 {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--text-navbar);
   margin-bottom: 25px;
 }
 
@@ -599,13 +613,13 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 }
 
 .legality-text li {
-  color: #d4d4d4;
+  color: var(--text-navbar);
   margin-bottom: 10px;
   font-size: 1.05rem;
 }
 
 .legality-text strong {
-  color: #4db5ff;
+  color: var(--tertiary);
 }
 
 /* RESPONSIVE */
@@ -976,7 +990,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 
   .about-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 40px;
   }
 

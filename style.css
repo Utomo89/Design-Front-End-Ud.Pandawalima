@@ -996,6 +996,7 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 
   .about-text h2 {
     font-size: 28px;
+    text-align: center;
   }
 
   .about-text h2::after {
@@ -1092,6 +1093,10 @@ background: linear-gradient(357deg,rgba(5, 89, 64, 0.78) 0%, rgba(6, 99, 71, 0.7
 
   .logo {
     height: 45px;
+  }
+
+  .hero{
+    text-align: left;
   }
 }
 
